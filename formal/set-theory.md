@@ -114,6 +114,10 @@ A relation $\sim$ on $A\times B$ is left-surjective if for all $b \in B$ there e
 **Definition: (Right-surjective)**<br>
 A relation $\sim$ on $A\times B$ is right-surjective if for all $a \in A$ there exists $b \in B$ such that $b \sim a$.
 
+**Definition: (Function)**<br>
+A function is a relation that is left-injective and left-surjective.
+
+
 ## Range
 
 ## Codomain
