@@ -3,7 +3,6 @@
 The contents of the book:
 
 - [Set theory](set-theory)
-- [Functions](functions)
 - [Trigonometry](trigonometry)
 - [Calculus](calculus)
 - [Vectors](vectors)
@@ -11,3 +10,6 @@ The contents of the book:
 - [Matrices](matrices)
 - [Linear algebra](linearalgebra)
 - [Math of machine learning](mathofmachinelearning)
+- [Mathematical induction](../formal/induction)
+- [Abstract algebra](abstractalgebra)
+- [Applied Math](appliedmath)

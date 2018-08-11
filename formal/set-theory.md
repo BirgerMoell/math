@@ -54,7 +54,13 @@ A relation $\sim$ on $A$ is reflexive if $a\sim a$ for all $a \in A$.
 **Definition: (Transitivity)**<br>
 A relation $\sim$ on $A$ is transitive if $a\sim b$ and $b\sim c$ then $a\sim c$ for all $a,b,c \in A$.
 
+**Exercise: (Number of relations)**<br>
+The number of relations defined on $A \times B$ is the same as the number of
+elements in the powerset $\mathcal{P}(A\times B)$. This number is
+$|\mathcal{P}(A\times B)| = 2^{|A||B|}$.
 
+**Exercise: (Number of functions)**<br>
+The number of functions $f: X\to Y$ is $|Y|^{|X|}$
 
 
 
@@ -102,20 +108,47 @@ A function is a relation that associates each element
 $x$ of a set $X$ the domain of the function to
 a single element $y$ of another set $Y$.
 
-**Definition: (Left-injective)**<br>
-A relation $\sim$ on $A\times B$ is left-injective if $a_1 \sim b$ and $a_2 \sim b$ then $a_1 = a_2$.
+**Definition: (Opposite relation)**<br>
+Let $R$ be a relation on $A\times B$. The opposite relation of $R$ is the
+relation $R_\text{op}$ is a relation on $B\times A$ given by $R_\text{op} =
+\{(b, a) : (a, b) \in R \}$. The opposite relation is also known as converse
+relation, transitive relation and inverse relation.
 
-**Definition: (Right-injective)**<br>
-A relation $\sim$ on $A\times B$ is right-injective if $a \sim b_1$ and $a \sim b_2$ then $b_1 = b_2$.
+**Definition: (Injective relation)**<br>
+A relation $\sim$ on $A\times B$ is injective if $a_1 \sim b$ and $a_2 \sim b$ then $a_1 = a_2$.
 
-**Definition: (Left-surjective)**<br>
-A relation $\sim$ on $A\times B$ is left-surjective if for all $b \in B$ there exists $a \in A$ such that $a \sim b$.
-
-**Definition: (Right-surjective)**<br>
-A relation $\sim$ on $A\times B$ is right-surjective if for all $a \in A$ there exists $b \in B$ such that $b \sim a$.
+**Definition: (Surjective relation)**<br>
+A relation $\sim$ on $A\times B$ is surjective if for all $b \in B$ there exists $a \in A$ such that $a \sim b$.
 
 **Definition: (Function)**<br>
-A function is a relation that is left-injective and left-surjective.
+A function $f:X\to Y$ is a relation $f$ on $X\times Y$ such that for all $x \in
+X$ there exists exactly one $y$ such that $(x, y) \in f$.
+
+**Definition: (Bijective function)**<br>
+A function is said to be bijective if it is injective and surjective.
+
+## Inverse function
+
+**Definition: (Left inverse function)**<br>
+A function $f:X\to Y$ is said to have a *left inverse* function $g: Y \to X$ if
+$g(f(x)) = x$ for all $x \in X$. A left inverse to $f$ is said to be a
+*retraction* of $f$.
+
+**Definition: (Right inverse function)**<br>
+A function $f:X\to Y$ is said to have a *right inverse* function $g: Y \to X$ if
+$f(g(y)) = y$ for all $y \in Y$. A right inverse to $f$ is said to be a
+*section* of $f$.
+
+**Definition: (Inverse function)**<br>
+A function $f:X\to Y$ is said to have an inverse function $g: Y \to X$ if $g$ is
+a left- and right inverse to $f$. The inverse function to $f$ is denoted $f^{-1}$.
+
+
+# Functions
+<img src="/public/img/function.png"/>
+A function
+
+
 
 
 ## Range
@@ -135,3 +168,9 @@ A function $f$ is bijective (or is a bijection or a one-to-one corresponance)
 if it is both injective and surjective.
 
 $f$ is bijective if, for any $y$
+
+
+
+# Inverse functions
+Code example
+
